@@ -3,7 +3,7 @@ const upload = require("../middleware/pdfUpload.middleware");
 const { isAdmin } = require("../middleware/auth.middleware");
 const userController = require("../controllers/user.controller");
 const {
-  getChildCategoryById,
+  getChildCategoryById
 } = require("../controllers/childCategory.controller");
 
 module.exports = function (app) {

@@ -7,7 +7,7 @@ exports.getResourceById = async (req, res, next, id) => {
  if(!user){
   return res.status(401).json({success : false,error : "No resource find"});
  }else{
-    req.user = user;
+    req.resource = user;
     next();
   }
   } catch (error) {

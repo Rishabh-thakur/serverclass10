@@ -8,7 +8,7 @@ exports.getChildCategoryById = async (req, res, next, id) => {
  if(!user){
   return res.status(401).json({success : false,error : "No child category find"});
  }else{
-    req.user = user;
+    req.childCategory = user;
     next();
   }
   } catch (error) {

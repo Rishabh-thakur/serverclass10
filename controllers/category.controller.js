@@ -7,7 +7,7 @@ exports.getCategoryById = async (req, res, next, id) => {
  if(!user){
   return res.status(401).json({success : false,error : "No category find"});
  }else{
-    req.user = user;
+    req.category = user;
     next();
   }
   } catch (error) {
